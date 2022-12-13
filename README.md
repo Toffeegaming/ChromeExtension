@@ -11,6 +11,11 @@ Ga snel naar de juiste website voor het smartboard.
 
 Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/webstore/detail/zuydop/cjnhfanldejdcbepeobokiciojhbbgmk).
 
+## TODO
+
+- Firefox port maken.
+- Instellingen pagina aanpassen.
+
 ## Licentie
 
 MIT
