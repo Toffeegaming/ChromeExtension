@@ -13,6 +13,7 @@ Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/w
 
 ## TODO
 
+- Automatisch beschikbare lokalen tonen op basis van de selectie van vleugel en verdieping
 - Firefox port maken.
 - Instellingen pagina aanpassen.
 
