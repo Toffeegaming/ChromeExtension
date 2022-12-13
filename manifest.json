@@ -1,0 +1,25 @@
+{
+    "name": "ZuydOp",
+    "version": "0.3",
+    "description": "Ga snel naar de juiste website voor het smartboard.",
+    "manifest_version": 3,
+    "author": "Cas olischläger",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+        "default_title": "Zuyd MirrorOp",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "/images/Zuyd_16.png",
+            "32": "/images/Zuyd_32.png",
+            "48": "/images/Zuyd_48.png",
+            "128": "/images/Zuyd_128.png"
+          }
+    },
+    "options_page": "options/options.html",
+    "icons": {
+        "16": "/images/Zuyd_16.png",
+            "32": "/images/Zuyd_32.png",
+            "48": "/images/Zuyd_48.png",
+            "128": "/images/Zuyd_128.png"
+      }
+  }

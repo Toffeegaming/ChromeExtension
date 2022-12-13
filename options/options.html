@@ -1,0 +1,38 @@
+<!-- settings.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Instellingen</title>
+    <style>
+        html {
+            background-color: #1175cb;
+        }
+    </style>
+</head>
+
+<body>
+    Voorkeur vleugel:
+    <select name="wing" id="wing">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+
+    Voorkeur verdieping:
+    <select name="floor" id="floor">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
