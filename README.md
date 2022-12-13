@@ -17,7 +17,3 @@ Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/w
 - Firefox port maken.
 - Instellingen pagina aanpassen.
 - Github actie maken voor automatische publicatie van een nieuwe release.
-
-## Licentie
-
-MIT
