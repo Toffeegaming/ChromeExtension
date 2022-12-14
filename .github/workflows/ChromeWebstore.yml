@@ -30,5 +30,3 @@ jobs:
           client-secret: ${{ secrets.CLIENT_SECRET }}
           # Name of zipped target upload file
           file-name: ${{ github.workspace }}/result.zip
-          # Publish or not after upload (true / false)
-          publish: true
