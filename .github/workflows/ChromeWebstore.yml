@@ -1,4 +1,4 @@
-name: ChromePublish
+name: ChromeWebstorePublish
 run-name: ${{ github.ref_name }} deploy to Chrome 🚀
 on:
   release:
