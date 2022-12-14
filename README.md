@@ -2,9 +2,6 @@
 
 Ga snel naar de juiste website voor het smartboard.
 
-## Deployments
-[![ChromeWebstorePublish](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml)
-
 ## Features
 
 - Simpele manier om het smartboard op je laptop te krijgen.
@@ -13,6 +10,9 @@ Ga snel naar de juiste website voor het smartboard.
 ## Installatie
 
 Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/webstore/detail/zuydop/cjnhfanldejdcbepeobokiciojhbbgmk).
+
+## Uploads
+[![ChromeWebstorePublish](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml)
 
 ## TODO
 
