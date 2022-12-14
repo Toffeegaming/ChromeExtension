@@ -9,10 +9,8 @@ Ga snel naar de juiste website voor het smartboard.
 
 ## Installatie
 
-Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/webstore/detail/zuydop/cjnhfanldejdcbepeobokiciojhbbgmk).
-
-## Uploads
-[![ChromeWebstorePublish](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml)
+Deze extensie is beschikbaar op de volgende platformen:
+- ![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cjnhfanldejdcbepeobokiciojhbbgmk?color=informational&label=Chrome%20Web%20Store)
 
 ## TODO
 
