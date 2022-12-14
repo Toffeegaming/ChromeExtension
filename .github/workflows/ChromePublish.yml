@@ -3,6 +3,7 @@ run-name: ${{ github.ref_name }} deploy to Chrome 🚀
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   upload-chrome-package:
