@@ -2,6 +2,9 @@
 
 Ga snel naar de juiste website voor het smartboard.
 
+## Deployments
+[![Chrome Webstore](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromePublish.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromePublish.yml)
+
 ## Features
 
 - Simpele manier om het smartboard op je laptop te krijgen.
