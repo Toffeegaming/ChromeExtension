@@ -13,6 +13,10 @@ jobs:
         with:
           files: images/ popup/ manifest.json
           dest: result.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: zip-artifact
+          path: ${{ github.workspace }}/result.zip
       - uses: Klemensas/chrome-extension-upload-action@v1.3
         with:
           # Auth refresh token
@@ -25,3 +29,5 @@ jobs:
           client-secret: ${{ secrets.CLIENT_SECRET }}
           # Name of zipped target upload file
           file-name: ${{ github.workspace }}/result.zip
+          # Publish or not after upload (true / false)
+          publish: true
