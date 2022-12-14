@@ -3,7 +3,7 @@
 Ga snel naar de juiste website voor het smartboard.
 
 ## Deployments
-[![Chrome Webstore](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromePublish.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromePublish.yml)
+[![ChromeWebstorePublish](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml/badge.svg?branch=chrome-master)](https://github.com/Toffeegaming/ChromeExtension/actions/workflows/ChromeWebstore.yml)
 
 ## Features
 
