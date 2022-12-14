@@ -18,3 +18,4 @@ Deze extensie is beschikbaar op de [Chrome webstore](https://chrome.google.com/w
 
 - Automatisch beschikbare lokalen tonen op basis van de selectie van vleugel en verdieping
 - Firefox port maken.
+- Microsoft Edge port maken.
