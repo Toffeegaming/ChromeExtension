@@ -1,0 +1,21 @@
+name: Zip
+run-name: ${{ github.ref_name }} zip artifact
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  produce-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1
+        with:
+          files: images/ popup/ manifest.json
+          dest: result.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: zip-artifact
+          path: ${{ github.workspace }}/result.zip
+          
