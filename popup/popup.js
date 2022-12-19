@@ -5,16 +5,46 @@ let room = document.getElementById("classroom");
 let submitButton = document.getElementById("submitButton");
 
 
-// Check if the submit button exists
+// Detect browser
+let browserName;
+let userAgent = navigator.userAgent;
+
+
+if(userAgent.match(/chrome|chromium|crios/i)) {
+  browserName = "chrome";
+} else if(userAgent.match(/firefox|fxios/i)) {
+  browserName = "firefox";
+}  else if(userAgent.match(/safari/i)) {
+  browserName = "safari";
+}else if(userAgent.match(/opr\//i)) {
+  browserName = "opera";
+} else if(userAgent.match(/edg/i)) {
+  browserName = "edge";
+} else {
+  browserName="No browser detection";
+}
+
+
 if(submitButton){
-  // Click event listeners
-  submitButton.addEventListener("click", async () => {
-    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      function: openMirrowWindow()
+  if (browserName == "chrome") {
+    // Click event listeners
+    submitButton.addEventListener("click", async () => {
+      let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: openMirrowWindow()
+      });
     });
-  });
+  } else { // Browser is Firefox TODO: remove
+    // Click event listeners
+    submitButton.addEventListener("click", async () => {
+      let [tab] = await browser.tabs.query({ active: true, currentWindow: true });
+      browser.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: openMirrowWindow()
+      });
+    });
+  }
 
   // Keypress event listener
   room.addEventListener("keypress", function(event) {
@@ -27,6 +57,7 @@ if(submitButton){
     }
   });
 }
+
 
 // Open the mirror window
 function openMirrowWindow() {
@@ -41,26 +72,47 @@ function openMirrowWindow() {
 
   url = "https://wepresent-" + wing + floor + "-" + room_trim + "/cgi-bin/web_index.cgi?lang=en&src=AwBrowserSlide.html&screen=1";
   window.open(url);
+  window.close()
 }
 
-// Saves options to chrome.storage
-function save_options(wing = 'A', floor = 0) {
-  chrome.storage.sync.set({
-      prefWing: wing,
-      prefFloor: floor
-  });
-}
 
-// Restores select box and checkbox state using the preferences
-// stored in chrome.storage.
-function restore_options() {
-  // Use default value color = 'red' and likesColor = true.
-  chrome.storage.sync.get({
+var save_options;
+var restore_options;
+if(browserName == "chrome") {
+  // Saves options to chrome.storage
+  function save_options() {
+    chrome.storage.sync.set({
+      prefWing: document.getElementById('wing').value,
+      prefFloor: document.getElementById('floor').value
+    });
+  }
+
+  function restore_options() {
+    chrome.storage.sync.get({
       prefWing: 'A',
       prefFloor: '0'
-  }, function (items) {
+    }, function (items) {
       document.getElementById('wing').value = items.prefWing;
       document.getElementById('floor').value = items.prefFloor;
-  });
+    });
+  }
+} else { // Browser is Firefox TODO: remove
+  // Saves options to browser.storage
+  function save_options() {
+    browser.storage.sync.set({
+      prefWing: document.getElementById('wing').value,
+      prefFloor: document.getElementById('floor').value
+    });
+  }
+
+  function restore_options() {
+    browser.storage.sync.get({
+      prefWing: 'A',
+      prefFloor: '0'
+    }, function (items) {
+      document.getElementById('wing').value = items.prefWing;
+      document.getElementById('floor').value = items.prefFloor;
+    });
+  }
 }
 document.addEventListener('DOMContentLoaded', restore_options);
