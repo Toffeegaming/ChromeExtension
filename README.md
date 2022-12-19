@@ -8,7 +8,7 @@ Ga snel en makkelijk naar de juiste website voor het smartboard.
 ## Features
 
 - Simpele manier om het smartboard op je laptop te krijgen.
-- Bewaard je laatst ingevoerde instellingen.
+- Bewaart je laatst ingevoerde instellingen.
 
 ## Installatie
 
