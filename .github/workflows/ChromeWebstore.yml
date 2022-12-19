@@ -15,6 +15,10 @@ jobs:
           files: images/ popup/ manifest.json
           recursive: false
           dest: result.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: zip-artifact
+          path: ${{ github.workspace }}/result.zip
       - uses: Klemensas/chrome-extension-upload-action@v1.3
         with:
           # Auth refresh token
