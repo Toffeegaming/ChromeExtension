@@ -3,7 +3,8 @@
 Ga snel en makkelijk naar de juiste website voor het smartboard.  
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cjnhfanldejdcbepeobokiciojhbbgmk?color=informational&label=Chrome%20Web%20Store&style=for-the-badge)](https://chrome.google.com/webstore/detail/zuydop/cjnhfanldejdcbepeobokiciojhbbgmk)
-[![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational&style=for-the-badge)](https://addons.mozilla.org/nl/firefox/addon/zuydop/)
+[![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational&style=for-the-badge)](https://addons.mozilla.org/nl/firefox/addon/zuydop/)  
+![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational&style=for-the-badge)
 
 ## Features
 
