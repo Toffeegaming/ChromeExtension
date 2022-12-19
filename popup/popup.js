@@ -69,8 +69,9 @@ function openMirrowWindow() {
   var room_raw = room.value.replace(/[^0-9]/g, ''); // Sanitize input
   var room_trim = room_raw.substring(0,3); // Trim input so only the first 3 digits are used
   room_trim = (room_trim === "") ? "001" : room_trim; // Check if input value is empty, if so give a default value, else pass input
+  var room_pad = room_trim.padStart(3,'0')
 
-  url = "https://wepresent-" + wing + floor + "-" + room_trim + "/cgi-bin/web_index.cgi?lang=en&src=AwBrowserSlide.html&screen=1";
+  url = "https://wepresent-" + wing + floor + "-" + room_pad + "/cgi-bin/web_index.cgi?lang=en&src=AwBrowserSlide.html&screen=1";
   window.open(url);
   window.close()
 }
