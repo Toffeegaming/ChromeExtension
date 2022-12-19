@@ -14,13 +14,17 @@ jobs:
         with:
           files: images/ popup/ manifest.json
           recursive: false
-          dest: result.xpi
+          dest: result.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: zip-artifact
+          path: ${{ github.workspace }}/result.zip
       - uses: trmcnvn/firefox-addon@v1
         with:
           # uuid is only necessary when updating an existing addon,
           # omitting it will create a new addon
           uuid: ${{ secrets.FIREFOXUUID }}
-          xpi: ${{ github.workspace }}/result.xpi
+          xpi: ${{ github.workspace }}/result.zip
           manifest: manifest.json
           api-key: ${{ secrets.FIREFOX_ID }}
           api-secret: ${{ secrets.FIREFOX_SECRET }}
