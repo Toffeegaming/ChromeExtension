@@ -1,0 +1,26 @@
+name: FirefoxAddonPublish
+run-name: ${{ github.ref_name }} deploy to Firefox 🚀
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  upload-chrome-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1
+        with:
+          files: images/ popup/ manifest.json
+          dest: result.xpi
+      - uses: trmcnvn/firefox-addon@v1
+        with:
+          # uuid is only necessary when updating an existing addon,
+          # omitting it will create a new addon
+          uuid: ${{ secrets.FIREFOXUUID }}
+          xpi: ${{ github.workspace }}/result.xpi
+          manifest: manifest.json
+          api-key: ${{ secrets.FIREFOX_ID }}
+          api-secret: ${{ secrets.FIREFOX_SECRET }}
+          
