@@ -20,5 +20,6 @@ Deze extensie is beschikbaar op de volgende platformen:
 
 ## TODO
 
+- Firefox memory issue oplossen.
 - Automatisch beschikbare lokalen tonen op basis van de selectie van vleugel en verdieping
 - Microsoft Edge port maken.
