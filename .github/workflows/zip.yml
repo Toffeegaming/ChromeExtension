@@ -13,9 +13,20 @@ jobs:
       - uses: vimtor/action-zip@v1
         with:
           files: images/ popup/ manifest.json
-          dest: result.zip
+          recursive: false
+          dest: resultc.zip
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1
+        with:
+          files: images/ popup/ manifest.json
+          recursive: false
+          dest: resultf.xpi
       - uses: actions/upload-artifact@v1
         with:
           name: zip-artifact
-          path: ${{ github.workspace }}/result.zip
+          path: ${{ github.workspace }}/resultc.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: xpi-artifact
+          path: ${{ github.workspace }}/resultf.xpi
           
