@@ -10,6 +10,8 @@ Ga snel en makkelijk naar de juiste website voor het smartboard.
 - Simpele manier om het smartboard op je laptop te krijgen.
 - Bewaart je laatst ingevoerde instellingen.  
 
+![screenshot](/images/Screenshot_1.png)
+
 
 ## Installatie
 
