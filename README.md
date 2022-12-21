@@ -3,12 +3,13 @@
 Ga snel en makkelijk naar de juiste website voor het smartboard.  
 
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cjnhfanldejdcbepeobokiciojhbbgmk?color=informational&label=Chrome%20Web%20Store&style=for-the-badge?logo=Google%20Chrome)
-![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational?label=Mozilla%20Add-on&style=for-the-badge?logo=firefox)  
+![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational&logo=firefox&style=for-the-badge)  
 
 ## Features
 
 - Simpele manier om het smartboard op je laptop te krijgen.
-- Bewaart je laatst ingevoerde instellingen.
+- Bewaart je laatst ingevoerde instellingen.  
+
 
 ## Installatie
 
