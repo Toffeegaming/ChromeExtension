@@ -2,7 +2,7 @@
 
 Ga snel en makkelijk naar de juiste website voor het smartboard.  
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cjnhfanldejdcbepeobokiciojhbbgmk?color=informational&label=Chrome%20Web%20Store&style=for-the-badge?logo=Google%20Chrome)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cjnhfanldejdcbepeobokiciojhbbgmk?color=informational&logo=Google%20chrome&style=for-the-badge)
 ![Mozilla Add-on](https://img.shields.io/amo/v/zuydop?color=informational&logo=firefox&style=for-the-badge)  
 
 ## Features
