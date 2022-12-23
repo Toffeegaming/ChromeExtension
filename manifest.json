@@ -23,7 +23,8 @@
       },
     "browser_specific_settings": {
         "gecko": {
-            "id":"zuydop@mozillafirefox"
+            "id":"zuydop@mozillafirefox",
+            "min_strict_version": "52.0"
         }
     }
   }
