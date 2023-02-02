@@ -19,16 +19,15 @@ jobs:
         with:
           name: zip-artifact
           path: ${{ github.workspace }}/result.zip
-      - uses: Klemensas/chrome-extension-upload-action@v1.3
+      - uses: mnao305/chrome-extension-upload@v4.0.1
         with:
           # Auth refresh token
           refresh-token: ${{ secrets.REFRESH_TOKEN }}
           # Extension application target id
-          app-id: ${{ secrets.CHROME_EXTENSION_ID }}
+          extension-id: ${{ secrets.CHROME_EXTENSION_ID }}
           # Token client id
           client-id: ${{ secrets.CLIENT_ID }}
           # Token client secret
           client-secret: ${{ secrets.CLIENT_SECRET }}
-          # Name of zipped target upload file
-          file-name: ${{ github.workspace }}/result.zip
-          publish: true
+          # Path of zipped target upload file
+          file-path: ${{ github.workspace }}/result.zip
