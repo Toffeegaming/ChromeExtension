@@ -1,0 +1,97 @@
+/* Light mode */
+:root {
+  --bg-colour: #ffffff;
+  --text-colour: #000000;
+  --select-colour: #f4f1f4;
+  --option-colour: #ffffff;
+  --button-colour: #cfcfcf;
+  --button-hover-colour: #277af7;
+  --expand-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="%23000000"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>');
+  --arrow-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="%23000000"><path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>');
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode */
+  :root {
+    --bg-colour: #353535;
+    --text-colour: #ffffff;
+    --select-colour: #1d1d1f;
+    --option-colour: #353535;
+    --button-colour: #727272;
+    --button-hover-colour: #277af7;
+    --expand-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="%23ffffff"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>');
+    --arrow-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="%23ffffff"><path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>');
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.98em;
+  background-color: var(--bg-colour);
+  color: var(--text-colour);
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--select-colour);
+  border-radius: 4px;
+  border: none;
+  padding: 9px 10px 10px;
+  transition-duration: 0.2s;
+}
+
+input::placeholder {
+  color: inherit;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+#submitButton {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--button-colour);
+  background-image: var(--arrow-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 60%;
+  display: block;
+  outline: none;
+  appearance: none;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 18px;
+  transition-duration: 0.2s;
+}
+
+#submitButton:hover {
+  background-color: var(--button-hover-colour);
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--select-colour);
+  background-image: var(--expand-image);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border-radius: 4px;
+  border: none;
+  color: inherit;
+  display: block;
+  padding: 10px 30px 10px 10px;
+  outline: none;
+  appearance: none;
+}
+
+option {
+  background-color: var(--option-colour);
+}
