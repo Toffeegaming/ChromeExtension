@@ -7,8 +7,9 @@ Ga snel en makkelijk naar de juiste website voor het smartboard.
 
 ## Features
 
-- Simpele manier om het smartboard op je laptop te krijgen.
-- Bewaart je laatst ingevoerde instellingen.
+- Makkelijke keuze tussen alle lokalen op locatie Nieuw Eyckholt.
+- Past zich aan aan je browser thema.
+- Verschillende thema's om uit te kiezen.
 
 ![screenshot](/images/Screenshot_1.png)
 
@@ -22,5 +23,4 @@ Deze extensie is beschikbaar op de volgende platformen:
 
 ## TODO
 
-- Automatisch beschikbare lokalen tonen op basis van de selectie van vleugel en verdieping
 - Microsoft Edge port maken.
