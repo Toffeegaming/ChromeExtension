@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>ZuydOp</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="popup.css" />
-    <script type="module" src="browser-polyfill.js"></script>
+    <script type="module" src="../script/browser-polyfill.js"></script>
   </head>
   <body>
     <table>
@@ -27,19 +28,12 @@
         </td>
         <td>
           <form id="roomform">
-            <input
-              type="text"
-              id="classroom"
-              placeholder="Lokaal"
-              style="width: 4em"
-            />
+            <input type="text" id="classroom" placeholder="Lokaal" />
           </form>
+          <script src="popup.js"></script>
         </td>
         <td>
-          <form>
-            <input type="submit" id="submitButton" value="" />
-            <script src="popup.js"></script>
-          </form>
+          <input type="submit" id="submitButton" value="" form="roomform" />
         </td>
       </tr>
     </table>

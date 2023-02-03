@@ -1,0 +1,148 @@
+/* Light mode */
+:root {
+  --bg-colour: #ff5151;
+  --div-colour: #ffffff;
+  --text-colour: #000000;
+  --animation: none;
+  --select-colour: #f4f1f4;
+  --option-colour: #ffffff;
+  --expand-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="%23000000"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>');
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode */
+  :root {
+    --bg-colour: #353535;
+    --div-colour: #ffffff;
+    --text-colour: #000000;
+    --animation: none;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--text-colour);
+  background: var(--bg-colour);
+  -webkit-animation: var(--animation);
+  animation: var(--animation);
+}
+
+#main {
+  border-radius: 25px;
+  background: var(--div-colour);
+  padding: 20px;
+  width: 50%;
+  height: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--select-colour);
+  background-image: var(--expand-image);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border-radius: 4px;
+  border: none;
+  color: inherit;
+  display: block;
+  padding: 10px 30px 10px 10px;
+  outline: none;
+  appearance: none;
+}
+
+option {
+  background-color: var(--option-colour);
+}
+
+@-webkit-keyframes color {
+  0% {
+    background: #f60000;
+  }
+  20% {
+    background: #ff8c00;
+  }
+  40% {
+    background: #ffee00;
+  }
+  60% {
+    background: #4de94c;
+  }
+  80% {
+    background: #3783ff;
+  }
+  100% {
+    background: #4815aa;
+  }
+}
+@keyframes color {
+  0% {
+    background: #f60000;
+  }
+  20% {
+    background: #ff8c00;
+  }
+  40% {
+    background: #ffee00;
+  }
+  60% {
+    background: #4de94c;
+  }
+  80% {
+    background: #3783ff;
+  }
+  100% {
+    background: #4815aa;
+  }
+}
+
+@-webkit-keyframes pastel {
+  0% {
+    background: #ffb1b0;
+  }
+  20% {
+    background: #ffdfbe;
+  }
+  40% {
+    background: #ffffbf;
+  }
+  60% {
+    background: #b4f0a7;
+  }
+  80% {
+    background: #a9d1f7;
+  }
+  100% {
+    background: #cc99ff;
+  }
+}
+@keyframes pastel {
+  0% {
+    background: #ffb1b0;
+  }
+  20% {
+    background: #ffdfbe;
+  }
+  40% {
+    background: #ffffbf;
+  }
+  60% {
+    background: #b4f0a7;
+  }
+  80% {
+    background: #a9d1f7;
+  }
+  100% {
+    background: #cc99ff;
+  }
+}

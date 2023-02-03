@@ -1,0 +1,29 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZuydOp Opties</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="options.css" />
+    <script type="module" src="../script/browser-polyfill.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div><h1>Opties</h1></div>
+      <label>
+        Thema
+        <select name="theme" id="theme">
+          <option value="none">Standaard</option>
+          <option value="color 8s linear infinite alternate both">
+            Kleurrijk
+          </option>
+          <option value="pastel 8s linear infinite alternate both">
+            Kleurrijk: Pastel
+          </option>
+        </select>
+      </label>
+      <script src="options.js"></script>
+    </div>
+    <div class="result"></div>
+  </body>
+</html>
